@@ -1,0 +1,354 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Misinformation Dashboard</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    body{
+      background-color: ghostwhite;
+    }
+    .column {
+      float: left;
+      width: 33%;
+      text-align:center;
+    }
+	.carouselcolumn {
+  float: left;
+}
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	.toprow:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+	td {
+padding:5px;
+line-height:24px;
+}
+    </style>
+    <script>
+    function toggleVideos(title) {
+      var x = document.getElementById('moreVideos-' + title);
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    </head>
+    <body>
+    <div id="fb-root"></div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v18.0" nonce="bLrrUQH7"></script>
+    <img src='https://static-prod.adweek.com/wp-content/uploads/2022/01/ZefrLogo1200x675.jpg' width="100" style=" display: block;margin-left: auto;margin-right: auto;" />
+    <h1 style="text-align:center;margin-top:20px;">Misinformation Dashboard - Coca Cola</h1>
+    <br>
+	<center>
+	<img src="stats.jpg" height="350" />
+	</center>
+	    <br>  
+	<center>
+	<div class="toprow" style="width:80%;">
+	<div style="float:left;width:30%;">
+	<h3 style="text-align:center;margin-bottom:25px;">Top Misinformation Creators</h3>
+	<table>
+	<tr>
+	<td><img src='https://yt3.googleusercontent.com/ln5khhaVPCpBdSt1tyI2_BPgYlY-iqUxM6dvAWgzp1x7ulxjvDI_Tn0ovipK8lsLPkYQXxmVIw=s176-c-k-c0x00ffffff-no-rj'  height="30" /></td>
+	<td><a href="https://www.youtube.com/@RedactedNews">Redacted</a></td>
+	<td>2.24M subscribers</td>
+	</tr>
+	
+	<tr>
+	<td><img src='https://yt3.googleusercontent.com/fXgXYq-vfZapJMvkRQ2k6L1vj4Zd2J97zKXlsc6G95LdIyfH3PI8o-QPreIbPOkEE0B63i1vNdU=s176-c-k-c0x00ffffff-no-rj'  height="30" /></td>
+	<td><a href="https://www.youtube.com/@NewsmaxTV">Newsmax</a></td>
+	<td>2.18M subscribers</td>
+	</tr>
+	<tr>
+	<td><img src='https://yt3.googleusercontent.com/ytc/AIf8zZQgntdy2ZVzgF56exOWY8IR2gsxzvWCkuq1gwviuA=s176-c-k-c0x00ffffff-no-rj'  height="30" /></td>
+	<td><a href="https://www.youtube.com/@TimcastIRL">TimcastIRL</a></td>
+	<td>1.60M subscribers</td>
+	</tr>
+	<tr>
+	<td><img src='https://yt3.googleusercontent.com/uh8l4I70AViAR_jYzxSDlzQZEIDsoStEJj20EZ_16O-OGuCIt5Yw-vykVBjL-qn4XOUJ181XBg=s176-c-k-c0x00ffffff-no-rj'  height="30" /></td>
+	<td><a href="https://www.youtube.com/@TuckerCarlson">Tucker Carlson</a></td>
+	<td>314.2K subscribers</td>
+	</tr>
+	</tr>
+	</table>
+	<br>
+	<button type="button">Block Creators</button>
+	</div>
+	
+	<div>
+	<h3 style="text-align:center">HIGH/FLOOR Risk Misinformation</h3><br>
+	<div id="carousel">
+	
+	<div class="carouselcolumn">
+		<iframe width="235" height="157" src="https://www.youtube.com/embed/F9X7OXrIlRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="carouselcolumn">
+		<iframe width="235" height="157" src="https://www.youtube.com/embed/yW8GI7ZD4T4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="carouselcolumn">
+		<iframe width="235" height="157" src="https://www.youtube.com/embed/GW5YGfrDd3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	<div class="carouselcolumn">
+		<iframe width="235" height="157" src="https://www.youtube.com/embed/ux2oGp4VpKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	</div>
+	<br>
+	<button type="button">Block Videos</button>
+	</div>
+	</div>
+		</center>
+	<br><br>
+    <hr>
+	<h2 style="text-align:center;margin-top:20px;">Election Monitor and Emerging News - Trending Misinformation and Social Issues</h2>
+	<hr>
+	
+	<h3 style="text-align:center">Epstein List Conspiracies</h3><p style="text-align:center">Videos featuring false claims related to Jeffrey Epstein and public figures mentioned in the Epstein documents</p>
+	<p style="text-align:center;font-weight:bold"><a href="https://www.usatoday.com/story/news/factcheck/2024/01/03/jeffrey-epstein-fact-check/72086418007/">Related Fact Checks: What's true and false about Jeffrey Epstein and the individuals on his list</a></p>
+	<p style="text-align:center"><button onclick="downloadCSV()" type="button">Block Trend</button></p>
+	<script>
+		function downloadCSV() {
+			var filename = "epstein.csv"; // Name of your CSV file
+			var filePath = 'path/to/your/' + filename; // Path to the CSV file
+
+			// Creating a temporary link element
+			var link = document.createElement('a');
+			link.href = filename;
+			link.download = filename;
+
+			// Append to the document and trigger the download
+			document.body.appendChild(link);
+			link.click();
+
+			// Remove the link after download
+			document.body.removeChild(link);
+		}
+	</script>
+    <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/UXcBXSIlgss" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/UXcBXSIlgss>
+        <img src=https://img.youtube.com/vi/UXcBXSIlgss/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/1LKUxCFf6Us" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/1LKUxCFf6Us>
+        <img src=https://img.youtube.com/vi/1LKUxCFf6Us/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/cUMX18F-ERI" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/cUMX18F-ERI>
+        <img src=https://img.youtube.com/vi/cUMX18F-ERI/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+	
+	<br>
+	<h3 style="text-align:center">Biden Funded Iran Terrorism</h3><p style="text-align:center">Videos featuring false claims that Biden gave Iran $6 Billion which were used to fund the October 7th terror attacks</p>
+	<p style="text-align:center;font-weight:bold"><a href="https://www.newsweek.com/fact-check-donald-trump-claims-us-gave-iran-6-billion-hostage-deal-1846827">Fact Check: Donald Trump Claims U.S. Gave Iran $6 Billion in Hostage Deal</a></p><p style="text-align:center"><button type="button">Block Trend</button></p>
+    <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/jw2eYbfzxXQ" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/jw2eYbfzxXQ>
+        <img src=https://img.youtube.com/vi/jw2eYbfzxXQ/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/X_dsqlk32Mc" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/X_dsqlk32Mc>
+        <img src=https://img.youtube.com/vi/X_dsqlk32Mc/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/wSgbCW8S718" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/wSgbCW8S718>
+        <img src=https://img.youtube.com/vi/wSgbCW8S718/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+	
+	<br><br>
+    <hr>
+	<h2 style="text-align:center;margin-top:20px;">Custom Brand Misinformation and Social Issues - Coca Cola</h2>
+	<hr>
+    <h3 style="text-align:center">Coca Cola's Negative Health Impact</h3><p style="text-align:center">Videos featuring health concerns of drinking Coca Cola and criticizing the Coca Cola ingredients.</p><p style="text-align:center"><button type="button">Block Trend</button></p>
+    <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/EdyVHDrP_34" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/EdyVHDrP_34>
+        <img src=https://img.youtube.com/vi/EdyVHDrP_34/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/E75cHUis4ME" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/E75cHUis4ME>
+        <img src=https://img.youtube.com/vi/E75cHUis4ME/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/ux2oGp4VpKE" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/ux2oGp4VpKE>
+        <img src=https://img.youtube.com/vi/ux2oGp4VpKE/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+</div>
+
+<br>
+<h3 style="text-align:center">Boycotts and Political Backlash</h3><p style="text-align:center">Coca Cola is hit with boycott calls and political backlash due to the middle east conflict and political stances.</p>
+<p style="text-align:center"><button type="button" onclick="downloadCSV2()">Block Trend</button></p>
+	<script>
+		function downloadCSV2() {
+			var filename = "boycott.csv"; // Name of your CSV file
+
+			// Creating a temporary link element
+			var link = document.createElement('a');
+			link.href = filename;
+			link.download = filename;
+
+			// Append to the document and trigger the download
+			document.body.appendChild(link);
+			link.click();
+
+			// Remove the link after download
+			document.body.removeChild(link);
+		}
+	</script>
+    <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/7PM2pOppAzo" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/7PM2pOppAzo>
+        <img src=https://img.youtube.com/vi/7PM2pOppAzo/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/nuyrVUYIaPg" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/nuyrVUYIaPg>
+        <img src=https://img.youtube.com/vi/nuyrVUYIaPg/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/edJYbH8oovU" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/edJYbH8oovU>
+        <img src=https://img.youtube.com/vi/edJYbH8oovU/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+       
+</div>
+
+<br>
+<h3 style="text-align:center">Environmental Criticisms</h3><p style="text-align:center">Coca Cola attracts environmental criticism over non-recyclable materials, unsustainable practices, and insufficient eco-friendly initiatives.</p><p style="text-align:center"><button type="button">Block Trend</button></p>
+    <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/yYIrZ8xyRo0" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/yYIrZ8xyRo0>
+        <img src=https://img.youtube.com/vi/yYIrZ8xyRo0/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/ghQ1ojx5_Go" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/ghQ1ojx5_Go>
+        <img src=https://img.youtube.com/vi/ghQ1ojx5_Go/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/PePq4SFzJZI" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/PePq4SFzJZI>
+        <img src=https://img.youtube.com/vi/PePq4SFzJZI/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+		
+<br>		
+<h2 style="text-align:center;margin-top:20px;">Generative AI and Brand Misappropriation - Coca Cola</h2><p style="text-align:center">Videos featuring Coca Cola IP via generative AI in the context of social issues and misinformation.</p><p style="text-align:center"><button type="button">Block Trend</button></p>
+  <div class="row">
+    
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/7xgt9N8YaC8" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/7xgt9N8YaC8>
+        <img src=https://img.youtube.com/vi/7xgt9N8YaC8/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/GW5YGfrDd3U" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/GW5YGfrDd3U>
+        <img src=https://img.youtube.com/vi/GW5YGfrDd3U/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        
+        <div class="column">
+        <iframe width="460" height="315" src="https://www.youtube.com/embed/F9X7OXrIlRM" 
+        srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style>
+        <a href=https://www.youtube.com/embed/F9X7OXrIlRM>
+        <img src=https://img.youtube.com/vi/F9X7OXrIlRM/hqdefault.jpg><span>▶</span></a>"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </div>
+<br><br>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script>
+	  $('#carousel').slick({
+		slidesToShow: 5,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	  });
+	</script>
+    </body>
+    </html>
+    
